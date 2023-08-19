@@ -1,0 +1,706 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+nav{
+    background-color: #fcb0d1;
+    background-image: linear-gradient(0deg, #fcb0d1 0%, #96fcf1 100%);
+    display: flex;
+    width: 100%;
+    position: fixed;
+}
+
+.logo{
+    width: 28%;
+    display: flex;
+}
+
+#logo3{
+    height: 100px;
+    margin-left: 1rem;
+}
+
+
+
+/* Image Shake */
+.logo:hover{
+    #logo3{
+    animation: Shake 0.5s linear 2;
+    }
+}
+
+@keyframes Shake {
+    0% {
+        transform: rotate(10deg);
+    }
+  
+    25% {
+        transform: rotate(-10deg);
+    }
+  
+    50% {
+        transform: rotate(10deg);
+    }
+  
+    75% {
+        transform: rotate(-10deg);
+    }
+  
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+
+
+/* DropDown Menue */
+.options{
+    display: flex;
+    width: 72%;
+}
+
+#navOp{
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.opcc{
+    font-size: 2.7rem;
+    height: 100%;
+    width: 22%;
+    font-family: 'Edu SA Beginner', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.opcc:hover{
+    font-size: 2.3rem;
+}
+  
+.dropdown {
+ position: absolute;
+ display: inline-block;
+}
+  
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #fcb0d1;
+ min-width: 230px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ left: -3.5rem;
+}
+  
+.dropdown-content a {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+ text-align: center;
+}
+  
+.dropdown-content a:hover {
+    /* font-size: 2rem; */
+    transition: 0.5s;
+}
+
+.dropdown-content #yellow:hover{
+    background-color:#FEEA63;
+}
+
+.dropdown-content #skin:hover{
+    background-color:#e8b954;
+}
+
+.dropdown-content #purple:hover{
+    background-color:#5E5A80;
+}
+  
+/* .dropdown:hover .dropdown-content {
+    display: block;
+} */
+
+
+#DD:hover{
+    .dropdown-content{
+        display: block;
+    }
+    
+}
+ 
+
+/* Main Body Conatiner */
+.mainContainer{
+    height: 160vh;
+}
+
+.backimg{
+    background-image: url(background.jpg);
+    height: 100%;
+    background-size: cover;
+}
+
+.information{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.one1{
+    background-color: #9afcf6;
+    background-image: linear-gradient(0deg, #9afcf6 0%, #ffbacc 100%);
+    width: 70%;
+    margin-bottom: 10px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.context{
+    width: 80%;
+    margin: 2%;
+}
+
+.photos{
+    width: 20%;
+    display: flex;
+    justify-content: end;
+}
+
+.photos img:hover{
+    transform: scale(1.1);
+}
+
+.photos img{
+    height: 300px;
+    margin: 10px;
+    border-radius: 10%;
+    width: 200px;
+    transition: 1s;
+}
+
+h1{
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 3rem;
+}
+
+p{
+    font-family: 'Edu SA Beginner', cursive;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.fflavors{
+    font-family: 'Edu SA Beginner', cursive;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+
+
+
+/* Shake Section */
+.TypeShake{
+    background-color: #ffbacc;
+    background-image: linear-gradient(0deg, #ffbacc 0%, #96fcf1 100%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainSC{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(flavour1.jpg);
+}
+
+.ShakeContainer1{
+    width: 90%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ShakeContainer2{
+    width: 90%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* PineApple */
+
+.pineapple{
+    background-color: #96fcf1;
+    margin: 20px;
+    border-radius: 10px;
+    height: 400px;
+    width: 750px;
+    transition: 1s;
+}
+
+.ShakeCon{
+    display: flex;
+}
+
+
+.pineapple h1{
+    text-align: center;
+}
+
+.pineapple p{
+    padding: 10px;
+}
+
+.RightType{
+    display: flex;
+    align-items: center;
+}
+
+.RightType img{
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.pineapple:hover{
+        transform: scale(1.1);
+        background-color: #FEEA63;
+}
+
+/* Peach */
+
+.peach{
+    background-color: #96fcf1;
+    height: 400px;
+    width: 750px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#peach:hover{
+    transform: scale(1.1);
+    background-color: #FFE5B4;
+} 
+
+/* Grapes */
+
+.Grape{
+    background-color: #96fcf1 ;
+    height: 400px;
+    width: 750px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#Grape:hover{
+    transform: scale(1.1);
+    background-color: #5E5A80;
+} 
+
+
+
+/* Video Section */
+.tutorials{
+    background-color: #9afcf6;
+    background-image: linear-gradient(0deg, #9afcf6 0%, #ffbacc 100%);
+    height:800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainVSec{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.VSec{
+    width: 97%;
+    height: 600px;
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+}
+
+iframe{
+    height: 450px;
+    width: 600px;
+}
+
+h2{
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 5rem;
+    text-decoration: underline;
+}
+
+.FirstV{
+    display:flex;
+    flex-direction:column ;
+    align-items: center;
+}
+
+.SecondV{
+    display:flex;
+    flex-direction:column ;
+    align-items: center;
+}
+
+.ThirdV{
+    display:flex;
+    flex-direction:column ;
+    align-items: center;
+}
+
+/* Contact Box */
+.contactUs{
+    background-color: #ffbacc;
+    background-image: linear-gradient(0deg, #ffbacc 0%, #96fcf1 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactBox{
+    background-color:black;
+    width: 50%;
+    height: 350px;
+    margin: 4rem;
+    color: white;
+}
+
+.abInformaion h1{
+    text-align: center;
+}
+
+.TInfo{
+    display: flex;
+}
+
+.FInfo{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+.fa {  
+    padding: 2px;  
+  text-align: center;  
+    margin: 1px;  
+    font-size: 30px;   
+  } 
+
+.fa-instagram {    
+    color: white;  
+  } 
+
+  .fa-google {    
+    color: white; 
+  }
+
+
+
+/* Media Queries */
+
+/* Width */
+
+@media (max-width:1700px){
+    iframe{
+        height: 300px;
+        width: 450px;
+    }
+}
+
+@media (max-width:1400px){
+    iframe{
+        height: 200px;
+        width: 350px;
+    }
+}
+
+@media (max-width:1300px){
+    .context{
+        width: 70%;
+        margin: 2%;
+    }
+    
+    .photos{
+        width: 30%;
+        display: flex;
+        align-items: end;
+    }
+
+    .ShakeContainer1{
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ShakeContainer2{
+        height: 350px;
+    }
+
+    .pineapple{
+        height: 250px;
+    }
+
+    .RightType img{
+        height: 175px;
+        width: 200px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    .LeftType{
+        width: 70%;
+    }
+
+    .RightType{
+        width: 30%;
+    }
+}
+
+@media (max-width:1255px){
+    .opcc{
+        width: 17%;
+        display: none;
+    }
+
+    .information{
+        padding-top: 50px;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width:1090px){
+    iframe{
+        height: 200px;
+        width: 300px;
+    }
+}
+
+@media (max-width:980px){
+    .tutorials{
+        height: 900px;
+    }
+    
+    .VSec{
+        display: block;
+        height: 100%;
+    }
+
+    .one1{
+        height: 300px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .photos img{
+        height: 250px;
+        width: 157px;
+    }
+}
+
+@media (max-width:840px){
+    .context{
+        width: 65%;
+    }
+
+    .photos{
+        width: 35%;
+    }
+
+    .pineapple{
+        width: auto;
+    }
+
+    .RightType img{
+        height: 175px;
+        width: 175px;
+    }
+}
+
+@media (max-width:770px){
+    .contactBox{
+        height:250px
+    }
+
+    .RightType img{
+        height: 175px;
+        width: 150px;
+    }
+
+    .logo{
+        justify-content: center;
+        width: 90%;
+    }
+
+    .logo img{
+        height: 70px;
+    }
+
+    #logo3{
+        height: 70px;
+    }
+
+    .options{
+        width: 10%;
+    }
+
+    .information{
+        padding-top: 30px;
+    }
+
+}
+
+@media (max-width:670px){
+    .one1{
+        width: 95%;
+    }
+
+    .RightType img{
+        height: 150px;
+        width: 120px;
+    }
+}
+
+@media (max-width:540px){
+        .context{
+            margin: 3pxpx;
+        }
+
+        .context li{
+            font-size: 1rem;
+        }
+
+        .LeftType{
+            width: 65%;
+        }
+
+        .RightType{
+            width: 35%;
+        }
+        .RightType img{
+            height: 150px;
+            width: 100px;
+        }
+
+        .contactBox{
+            width: 320px;
+            height: 250px;
+        }
+}
+
+@media (max-width:425px){
+
+    .photos{
+        display: none;
+        width: 0%;
+    }
+
+    .context{
+        width: 100%;
+    }
+
+    .RightType{
+        display: none;
+        width: 0%;
+    }
+
+    .LeftType{
+        width: 100%;
+        align-items: center;
+    }
+
+
+    .abInformaion{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width:425px){
+    .logo img{
+        height: 50px;
+    }
+
+    #logo3{
+        height: 50px;
+    }
+    .information{
+        padding-top: 30px;
+    }
+}
+
+/* Height */
+
+@media (max-height:715px){
+    .one1{
+        height: 300px;
+    }
+}
+
+@media (max-height:715px){
+    .one1{
+        height: 250px;
+    }
+
+    .photos img{
+        height: 200px;
+        width: 140px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+}
