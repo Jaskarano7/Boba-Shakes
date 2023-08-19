@@ -151,7 +151,7 @@ a{
 }
 
 .backimg{
-    background-image: url(background.jpg);
+    background-image: url(Images/background.jpg);
     height: 100%;
     background-size: cover;
 }
@@ -237,7 +237,7 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(flavour1.jpg);
+    background-image: url(Images/flavour1.jpg);
 }
 
 .ShakeContainer1{
